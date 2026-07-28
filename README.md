@@ -5,8 +5,6 @@
 
 **Hacker Holidays 2026** is a free 14-day cybersecurity adventure by [TryHackMe](https://tryhackme.com) that makes learning fun and exciting. Every day, you'll unlock a brand-new hands-on challenge as you explore the fictional Byte Lotus resort. Along the way, you'll discover exciting topics like **OSINT, web security, cloud security, digital forensics, and AI** through interactive, **real world activities**. Whether you're just getting started or already love cybersecurity, there's something new to learn every day. Complete daily challenges, sharpen your practical hacking skills, solve interesting puzzles, and earn raffle entries for the chance to win amazing prizes while enjoying an unforgettable learning experience.
 
-### [-------------------- <br>| Hacker Holiday |<br> --------------------](https://tryhackme.com/hackerholidays)
-
 # Event Details
 > ### **Start** : Monday 27th, July 2026 <br>
 > ### **End** :  Monday 10th, August 2026 <br>
