@@ -23,6 +23,7 @@
 # Prizes Pool🎁
 
 <p align="left">
+  <img src="assets/open.jpg" alt="Prize Pool" width="50%">
   <img src="assets/prizes.jpg" alt="Prize Pool" width="50%">
 </p>
 
@@ -40,6 +41,6 @@
 #
 
 <p align="center">
-  <img src="res.png" alt="thmbanner" width="100%">
+  <img src="/assets/res.png" alt="thmbanner" width="100%">
 </p>
 
