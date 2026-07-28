@@ -35,7 +35,7 @@
 > ### DAY 1 : [The Concierge Knows Too Much](https://tryhackme.com/room/hh-theconciergeknows-2d7eb4d9)
 
 > <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785086810848&w=96&q=75"> <br>
-> ### DAY 2 : [COMING SOON]()
+> ### DAY 2 : [Room 404 (COMING SOON)]()
 
 #
 
