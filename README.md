@@ -23,8 +23,7 @@
 # Prizes Pool🎁
 
 <p align="center">
-  <img src="assets/open.jpg" alt="Prize Pool" width="50%">
-  <img src="assets/prizes.jpg" alt="Prize Pool" width="50%">
+  <img src="assets/prize.jpg" alt="Prize Pool" width="50%">
 </p>
 
 # 🏝️ Enjoy the Holiday
