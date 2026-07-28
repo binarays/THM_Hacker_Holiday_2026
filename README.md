@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/thmhh.png" alt="Night GIF" width="100%">
+  <img src="assets/the-hacker-holidays-og.png" alt="Night GIF" width="100%">
 </p>
 
 
@@ -10,7 +10,8 @@
 # Event Details
 > ### **Start** : Monday 27th, July 2026 <br>
 > ### **End** :  Monday 10th, August 2026 <br>
-> ### **Entry** : [Free](assets/ft.png) <br>
+> ### **Level** : Biginner - Expert
+> ### **Entry** : [](../assets/free-ticket-transparent-background-22.png) <br>
 > ### **Visit** : [Hacker Holiday 2026](https://tryhackme.com/hackerholidays) <br>
 
 > ### **How to enter** <br>
