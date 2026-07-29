@@ -226,7 +226,7 @@ git-dumper --help
 Dump the Git Repository
 Run:
 ```bash
-git-dumper http://10.130.176.140:8080/.git/ byte_lotus
+git-dumper http://MACHNIE_IP:8080/.git/ byte_lotus
 ```
 Output:
 ```
