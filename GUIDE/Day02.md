@@ -179,12 +179,12 @@ http://MACHINE_IP:8080
   night-shift <dev@byte-lotus.internal>
   commit (initial): initial Byte Lotus guest platform
   ```
-  > Important information:
-      Commit hash:
+  > Important information: <br>
+  > Commit hash: <br>
       ```
       0f13550b4cb13e9f30c61d5b342c532d21e45bda
-      ```
-  > Extract information from the Git HEAD hash value.
+      ``` <br>
+  > Extract information from the Git HEAD hash value. <br>
     ```
     curl http://10.130.162.181:8080/.git/objects/0f/13550b4cb13e9f30c61d5b342c532d21e45bda
     ```
