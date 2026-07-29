@@ -170,12 +170,12 @@ http://MACHINE_IP:8080
 - Find Git Commit History
   Check the Git log:
   ```bash
-  curl http://10.130.176.140:8080/.git/logs/HEAD
+  curl http://MACHNIE_IP:8080/.git/logs/HEAD
   ```
   Output:
   ```
   0000000000000000000000000000000000000000 
-  0f13550b4cb13e9f30c61d5b342c532d21e45bda 
+  <HASHVALUE>
   night-shift <dev@byte-lotus.internal>
   commit (initial): initial Byte Lotus guest platform
   ```
@@ -186,13 +186,13 @@ http://MACHINE_IP:8080
       ``` <br>
   > Extract information from the Git HEAD hash value. <br>
     ```
-    curl http://10.130.162.181:8080/.git/objects/0f/13550b4cb13e9f30c61d5b342c532d21e45bda
+    curl http://MACHNIE_IP:8080/.git/objects/<HASHVALUE>
     ```
 ## Recovering an Exposed Git Repository Using git-dumper
 
 The easiest way to recover an exposed Git repository is by using **git-dumper**.
 
-`git-dumper` is a tool used to download an exposed `.git` directory from a web server and reconstruct the Git repository locally.
+`git-dumper` is a tool for downloading an exposed `.git` directory from a web server and reconstructing the Git repository locally.
 
 When a website accidentally exposes its `.git` directory, it may reveal:
 
