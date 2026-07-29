@@ -184,6 +184,10 @@ http://MACHINE_IP:8080
       ```
       0f13550b4cb13e9f30c61d5b342c532d21e45bda
       ```
+  > Extract information from the Git HEAD hash value.
+    ```
+    curl http://10.130.162.181:8080/.git/objects/0f/13550b4cb13e9f30c61d5b342c532d21e45bda
+    ```
 ## Recovering an Exposed Git Repository Using git-dumper
 
 The easiest way to recover an exposed Git repository is by using **git-dumper**.
