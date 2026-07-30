@@ -38,6 +38,9 @@
 > <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785087675274&w=96&q=75"> <br>
 > ### DAY 2 : [Room 404](https://tryhackme.com/room/hh-room404-804573bf) [| GUIDE HERE](GUIDE/Day02.md)
 
+> <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251342649&w=96&q=75"> <br>
+> ### DAY 3 : [Complimentary](https://tryhackme.com/room/hh-complimentary-05e0b604) [| GUIDE HERE](GUIDE/Day03.md)
+
 #
 
 <p align="center">
