@@ -58,6 +58,7 @@ AWS.config.credentials.get(function (err) {
   });
 });
 ```
-> The console prints the DynamoDB records of customers; then you can find your lab
+> The console prints the DynamoDB records of customers <br>
+> then you can find your **FLAG** 🚩
 
 # Congratulations on your Exploration 🎉
