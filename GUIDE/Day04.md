@@ -60,7 +60,7 @@
       listener.join()
 
   ```
-- Then Solve teh `P1+P2`
+- Then solve the `P1+P2`
   ```
   H0t3lSt@ff0NlyK3epS3cr3t!
   ```
