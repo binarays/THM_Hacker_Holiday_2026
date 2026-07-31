@@ -41,6 +41,12 @@
 > <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251342649&w=96&q=75"> <br>
 > ### DAY 3 : [Complimentary](https://tryhackme.com/room/hh-complimentary-05e0b604) [| GUIDE HERE](GUIDE/Day03.md)
 
+> <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251388851&w=96&q=75"> <br>
+> ### DAY 4 : [Packed Light](https://tryhackme.com/room/hh-packedlight-02e5330c?vccr=1) [| GUIDE HERE](GUIDE/Day04.md)
+
+ <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251388851&w=96&q=75"> <br>
+> ### DAY 5 : [Packed Light](https://tryhackme.com/room/hh-packedlight-02e5330c?vccr=1) [| GUIDE HERE](GUIDE/Day04.md)
+
 #
 
 <p align="center">
