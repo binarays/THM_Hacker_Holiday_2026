@@ -56,8 +56,8 @@
  <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251667401&w=96&q=75"> <br>
 > ### DAY 8 : [Towel on the Sunbed](https://tryhackme.com/room/hh-towelonthesunbed-61271709) [| GUIDE HERE](GUIDE/Day08.md)
 
- <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251667401&w=96&q=75"> <br>
-> ### DAY 9 : [Beach Bar](https://tryhackme.com/room/hh-beachbar-d849f7f7) [| GUIDE HERE](GUIDE/Day09.md)
+ <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785218019756&w=96&q=75"> <br>
+> ### DAY 9 : [CryptoCabana](https://tryhackme.com/room/hh-cryptocabana-f81cac95) [| GUIDE HERE](GUIDE/Day09.md)
 
 #
 
