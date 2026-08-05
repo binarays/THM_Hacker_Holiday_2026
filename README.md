@@ -47,6 +47,18 @@
  <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785328070219&w=96&q=75"> <br>
 > ### DAY 5 : [Beach Bar](https://tryhackme.com/room/hh-beachbar-d849f7f7) [| GUIDE HERE](GUIDE/Day05.md)
 
+ <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251499374&w=96&q=75"> <br>
+> ### DAY 6 : [Overheard at Breakfast](https://tryhackme.com/room/hh-overheardatbreakfast-6f01793c) 
+
+ <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251618019&w=96&q=75"> <br>
+> ### DAY 7 : [Do Not Disturb](https://tryhackme.com/room/hh-donotdisturb-84a45644) [| GUIDE HERE](GUIDE/Day07.md)
+
+ <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251667401&w=96&q=75"> <br>
+> ### DAY 8 : [Towel on the Sunbed](https://tryhackme.com/room/hh-towelonthesunbed-61271709) [| GUIDE HERE](GUIDE/Day08.md)
+
+ <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251667401&w=96&q=75"> <br>
+> ### DAY 9 : [Beach Bar](https://tryhackme.com/room/hh-beachbar-d849f7f7) [| GUIDE HERE](GUIDE/Day09.md)
+
 #
 
 <p align="center">
