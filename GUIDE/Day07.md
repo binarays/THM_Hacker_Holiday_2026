@@ -1,6 +1,6 @@
 ## Hello
 <p align="center">
-  <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785328070219&w=96&q=75">
+  <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251618019&w=96&q=75">
 </p>
 
 # Do Not Disturb
