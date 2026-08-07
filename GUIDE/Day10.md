@@ -43,7 +43,7 @@ This site can't be reached
 import json
 import zipfile
 
-RHOST="YOUR_iIP"
+RHOST="YOUR_IP"
 RPORT= PORT
 
 manifest = {
