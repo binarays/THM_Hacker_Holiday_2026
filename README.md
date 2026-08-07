@@ -63,7 +63,7 @@
 > ### DAY 10 : [The Hollow Shell](https://tryhackme.com/room/hh-thehollowshell-ddb582ac) [| GUIDE HERE](GUIDE/Day10.md)
 
 <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251854806&w=96&q=75">  <br>
-> ### DAY 11 : [The Hollow Shell](https://tryhackme.com/room/hh-infinitypool-5b3548af) [| GUIDE HERE](GUIDE/Day11.md)
+> ### DAY 11 : [Infinity Pool](https://tryhackme.com/room/hh-infinitypool-5b3548af) [| GUIDE HERE](GUIDE/Day11.md)
 
 #
 
