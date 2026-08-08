@@ -30,7 +30,7 @@ Target:
 
 ## STEP 02
 - Lets 
-  ```
+  ```bash
   strings -a OBJECTS.DATA | grep -oE '[A-Za-z0-9+/]{200,}={0,2}' > b64.txt
   ```
   > This tries to find large encoded/Base64 data inside OBJECT.DATA and puts the results into b64.txt for further analysis.
@@ -40,18 +40,19 @@ Target:
   > - /temp/b64.txt → stores the extracted strings there.
 
 - Now use the `payload`
-  ```
-  while read x;do 
-  echo "$x" | base64 -d 2>/dev/null | python3 -c 'import sys,zlib; d=sys.stdin.buffer.read();
-  try:print(zlib.decompress(d,-15).decode(error="ignore"))
-  
-  except:pass'
-  done </temp/b64.txt
+  ```bash
+  while read -r x; do
+      echo "$x" | base64 -d 2>/dev/null | python3 -c 'import sys,zlib; d=sys.stdin.buffer.read(); 
+  try:
+      print(zlib.decompress(d,-15).decode(errors="ignore"))
+  except:
+      pass'
+  done < b64.txt
   ```
   > Base64 → decode → try DEFLATE decompression → print readable text if successful.
 
 - Then find the `user patch`
-  ```
+  ```bash
   echo "<hash>" | base64 -d
   ```
   
