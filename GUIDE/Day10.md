@@ -4,9 +4,6 @@
 
 # The Hollow Shell
 
-In this room, use the discovered sensitive information, such as the Azure Storage account name and SAS token, to access and explore the Blob Storage resources.
-
-
 Target application:
 ```URL
 https://MACHINE_IP
