@@ -65,6 +65,9 @@
 <img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251854806&w=96&q=75">  <br>
 > ### DAY 11 : [Infinity Pool](https://tryhackme.com/room/hh-infinitypool-5b3548af) [| GUIDE HERE](GUIDE/Day11.md)
 
+<img src="https://tryhackme.com/_next/image?url=https%3A%2F%2Fcdn-images.tryhackme.com%2Froom-icons%2F5dbea226085ab6182a2ee0f7-1785251914578&w=96&q=75">  <br>
+> ### DAY 12 : [After Hours](https://tryhackme.com/room/hh-afterhours-b090d1f0) [| GUIDE HERE](GUIDE/Day12.md)
+
 #
 
 <p align="center">
