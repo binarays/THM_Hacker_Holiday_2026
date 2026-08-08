@@ -31,7 +31,7 @@ Target:
 ## STEP 02
 - Lets 
   ```
-  strings -a OBJECT.DATA | grep-oE'[A-za-z0-9+/]{200,}={0,2}'>/temp/b64.txt
+  strings -a OBJECTS.DATA | grep -oE '[A-Za-z0-9+/]{200,}={0,2}' > b64.txt
   ```
   > This tries to find large encoded/Base64 data inside OBJECT.DATA and puts the results into b64.txt for further analysis.
   > - strings -a OBJECT.DATA → extracts readable text from the file.
